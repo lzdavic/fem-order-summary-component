@@ -6,32 +6,47 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Order summary card</title>
+  <title>Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <h1 class="sr-only">Order summary card</h1>
+    <section class="card-container">
+      <img class="card__image" src="images/illustration-hero.svg" alt="illustration of hero listening music in headphones">
+      <div class="card__text-container">
+        <h2 class="text__title">
+          Order Summary
+        </h2>
+        <p class="text__content">
+          You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!
+        </p>
+      </div>
+      <div class="card__plan-container">
+        <img class="plan__icon" src="images/icon-music.svg" alt="Musical note icon">
+        <h3 class="plan__title">
+          Annual Plan
+        </h3>
+        <p class="plan__price">
+          $59.99/year
+        </p>
+        <a class="plan__link">
+          Change
+        </a>
+      </div>
+      <div class="card__buttons-container">
+        <button class="card__button card__button_procced">Proceed to Payment</button>
+        <button class="card__button card__button_cancel">Cancel Order</button>
+      </div>
+    </section>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="github.com/lzdavic">Luiz Davi</a>.
+    </div>
+  </main>
 </body>
 </html>
